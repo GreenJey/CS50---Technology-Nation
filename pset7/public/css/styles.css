@@ -1,0 +1,93 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+.container
+{
+    /* center contents */
+    margin-left: 100;
+    margin-right: 100;
+    text-align: center;
+}
+
+#top
+{
+    /* surround with whitespace */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#top .nav
+{
+    /* center navigation pills */
+    display: inline-block;
+    font-size: 13pt;
+    position: relative;
+}
+
+#top .nav ul li a
+{
+    display: block; 
+    padding: 15px 5px;
+    color: #222; 
+    font-size: .9em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#top .nav ul li:hover{background: rgba(0,0,0,.15);}
+
+#top .nav ul li ul:hover{display: block;}
+
+.menu
+{
+    display: none;
+    font-size: 10pt;
+}
+
+li:hover .menu
+{
+    display: block;
+}
+
+
+li 
+{
+    list-style-type: none; /* Убираем маркеры */
+}
+
+ul 
+{
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.setting
+{
+    padding: 0px 0px;
+}
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}

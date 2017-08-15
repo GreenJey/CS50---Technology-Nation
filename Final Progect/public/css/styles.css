@@ -1,0 +1,143 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+
+/* підключення шрифта */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+.container
+{
+    /* center contents */
+    margin-left: 100;
+    margin-right: 100;
+    text-align: center;
+}
+
+#top
+{
+    /* surround with whitespace */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* анімація на feedback */
+.feedback 
+{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: mymove 5s infinite;
+}
+
+/* анімація на feedback */
+@keyframes mymove 
+{
+    from {right: 0px;}
+    to {right: 20px;}
+}
+
+#top .nav
+{
+    /* center navigation pills */
+    display: inline-block;
+    font-size: 13pt;
+    position: relative;
+}
+
+#top .nav ul li a
+{
+    display: block; 
+    padding: 15px 5px;
+    color: #222; 
+    font-size: .9em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#top .nav ul li:hover{background: rgba(0,0,0,.15);}
+
+#top .nav ul li ul:hover{display: block;}
+
+.menu
+{
+    display: none;
+    font-size: 10pt;
+}
+
+li:hover .menu
+{
+    display: block;
+}
+
+
+li 
+{
+    list-style-type: none; /* забираємо маркери */
+}
+
+ul 
+{
+    margin-left: 0; 
+    padding-left: 0; 
+}
+
+.back
+{
+    display: none;
+    font-size: 10pt;
+}
+
+#bottom .back ul li:hove
+{
+    display: block;
+}
+
+.setting
+{
+    padding: 0px 0px;
+}
+
+/* шаблон відправки Е-mail */
+body, button, input[type=text], input[type=password], input[type=email], h1, textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+input[type=text], input[type=password], input[type=email], textarea {
+    padding: 8px;
+    border: 1px solid #EEEFF2;
+    border-radius: 8px;
+    color: #ADB6BA;
+    width: 300px;
+    outline: none;
+}
+
+textarea {
+    height: 200px;
+    width: 210px;
+    resize: none;
+}
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
